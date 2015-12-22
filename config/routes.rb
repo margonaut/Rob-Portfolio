@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+	# root 'projects#index'
+
+	resources :projects, only: [:index, :show]
 	#Casein routes
 	namespace :casein do
 		resources :projects
